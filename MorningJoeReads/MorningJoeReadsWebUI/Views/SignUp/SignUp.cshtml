@@ -1,0 +1,85 @@
+﻿@using System.Web.UI.HtmlControls
+@model MorningJoeReadsWebUI.ViewModel.SignUpViewModel
+@{
+    ViewBag.Title = "SignUp";
+}
+@Styles.Render("~/Content/LandingPage.css")
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device.width" />
+    <style>
+        tbody{
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Please enter your Information</h2>
+    @using (Html.BeginForm("SignUp","SignUp", FormMethod.Post))
+    {
+    <table cellpadding="10" cellspacing="10" align="center">
+        <tr>
+            <td style="color:antiquewhite">
+                @Html.LabelFor(m => m.FirstName)
+            </td>
+            <td>
+                @Html.EditorFor(m => m.FirstName)
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="color:red">@Html.ValidationMessageFor(m => m.FirstName)</td>
+        </tr>
+        <tr>
+            <td style="color:antiquewhite">
+                @Html.LabelFor(m => m.LastName)
+            </td>
+            <td>
+                @Html.EditorFor(m => m.LastName)
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="color:red">@Html.ValidationMessageFor(m => m.LastName)</td>
+        </tr>
+        <tr>
+            <td style="color:antiquewhite">
+                @Html.LabelFor(m => m.EmailAddress)
+            </td>
+            <td>
+                @Html.EditorFor(m => m.EmailAddress)
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="color:red">@Html.ValidationMessageFor(m => m.EmailAddress)</td>
+        </tr>
+        <tr>
+            <td style="color:antiquewhite">
+                @Html.LabelFor(m => m.PassWord)
+            </td>
+            <td>
+                @Html.EditorFor(m => m.PassWord)
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td style="color:red">@Html.ValidationMessageFor(m => m.PassWord)</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label class="field-validation-error" style="color:red">
+                    @Html.DisplayFor(m => m.SignupErrorMessage)
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+    }
+</body>
+</html>

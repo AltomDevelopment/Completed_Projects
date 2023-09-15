@@ -1,0 +1,64 @@
+﻿@*Each time a search is added a new button should appear on the loggedin home screen
+  allowing the user to click on the button, from that point the user should then be 
+  linked to a google search of the typed in search description. The search title should
+  appear as the button title.*@
+@model MorningJoeReadsWebUI.ViewModel.NewSearchViewModel
+@{
+    ViewBag.Title = "NewSearchWindow";
+    Layout = "~/Views/Shared/_LoggedInLayout.cshtml";
+}
+@Styles.Render("~/Content/LandingPage.css")
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device.width" />
+    <style>
+        tbody{
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Enter Search Information</h2>
+    @using (Html.BeginForm("UpdateSearchData", "LoggedInHome", FormMethod.Post))
+    {
+    <table id="AddSearchForm" cellpadding="10" cellspacing="10" align="center">
+        <tr>
+            <td style="color:antiquewhite">
+                @Html.LabelFor(m => m.SearchName)
+            </td>
+            <td>
+                @Html.EditorFor(m => m.SearchName)
+            </td>
+        <tr>
+            <td></td>
+            <td style="color:red">@Html.ValidationMessageFor(m => m.SearchName)</td>
+        </tr>
+        <tr>
+            <td style="color:antiquewhite">
+                @Html.LabelFor(m => m.SearchDescription)
+            </td>
+            <td>
+                @Html.EditorFor(m => m.SearchDescription)
+            </td>
+        <tr>
+            <td></td>
+            <td style="color:red">@Html.ValidationMessageFor(m => m.SearchDescription)</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label class="field-validation-error" style="color:red">
+                    @Html.DisplayFor(m => m.SearchErrorMessage)
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>    
+    }     
+</body>
+</html>
+
