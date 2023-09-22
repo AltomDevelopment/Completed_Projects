@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/resources/css/site.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/resources/css/bootstrap.min.css">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <div class="coverimage">
+      <button type="button" class="menubutton btn btn-secondary" onclick="showMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+      </svg>
+      </button>
+
+      <div class="cover">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div id="nav-menu" class="nav-menu" style="width: 280px;">
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-dark">Dashboard</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-dark">Orders</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-dark">Products</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="card-group" id="card-group">
+          <div class="menu-card">
+            <div class="card-body1"> 
+                <h6 class="card-title">View Menu</h6>
+            </div>
+          </div>
+          <div class="order-card">
+            <div class="card-body2">
+                <h6 class="card-title">Place an Order</h6>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="sectionHeading">
+      <h2>Local Favorites</h2>
+    </div>
+
+    <div class="item1 col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Item1</h3>
+          <div class="mb-1 text-muted">Best tasting item on the menu</div>
+          <p class="card-text mb-auto">Short Descr of item</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="/resources/images/LocalFavorite.jpg" width="200" height="250">
+        </div>
+      </div>
+    </div>
+    
+    <div class="item2 col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Item2</h3>
+          <div class="mb-1 text-muted">Best value on the menu</div>
+          <p class="mb-auto">Short Descr of item</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="/resources/images/BestValue.jpg" width="200" height="250">
+        </div>
+      </div>
+    </div>
+
+    <h2 class="testimonialSection">Customer Testimonials</h2>
+      
+    <div class="customerReviews col-lg-4">
+      <img src="/resources/images/person1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+      <h2 class="testimonialHeading fw-normal">Great Experience</h2>
+      <p class="testimonial">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
+        it to make a type specimen book."</p>
+    </div>
+  
+    <div class="customerReviews col-lg-4">
+      <img src="/resources/images/person2.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
+      <h2 class="testimonialHeading fw-normal">Best Food Around</h2>
+      <p class="testimonial">"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
+        it to make a type specimen book. It has survived not only five centuries, but also the leap into 
+        electronic typesetting, remaining essentially unchanged."</p>
+    </div>
+
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2023 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+    
+  </body>
+  <!-- Bootstrap JS-->
+  <script src="/resources/js/bootstrap.js"></script>
+  <script src="/resources/js/bootstrap.min.js"></script>
+  <script src="/resources/js/site.js"></script>
+</html>
+
