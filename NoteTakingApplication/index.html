@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Note Taking Application using Bootstrap 4 and Materialize CSS-->
+<html>
+  <!-- Fonts -->
+  <script src="https://kit.fontawesome.com/f543b30968.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Created CSS and JS -->
+  <script src="/js/app.js"></script>
+  <link rel="stylesheet" href="css/site.css">
+  <!--Import materialize.css-->
+  <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.min.css"> 
+
+  <head>
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+      <h1>NOTES</h1>
+      <i class="fa-solid fa-plus fa-2x" id="addNoteButton" onclick="addNote()"></i>
+      <i class="fa-solid fa-image fa-2x" onclick="addImage()"></i>
+    </div>
+  </head>
+    
+  <body>
+    <h2>Welcome to The App</h2>
+
+    <P>
+      Instructions on using the app
+    </P>
+    <div class="notearea" id="dragarea" ondrop="drop_handler(event)" ondragover="dragover_handler(event)">
+      <!--CustomElementsArea-->
+      <!--<note-component></note-component>-->
+      <!--<notecontent-component></notecontent-component>-->
+      <!--Add JS to the actual note to get it to work-->
+      
+    </div>
+  </body>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.js"></script>
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap-4.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/materialize.min.js" type="text/javascript" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="/components/Note.js"></script>
+    <script src="/components/NoteContent.js"></script>
+</html>
