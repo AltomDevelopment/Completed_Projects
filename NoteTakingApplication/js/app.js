@@ -1,4 +1,5 @@
 //Array of HTMLElements
+const buttonArray = [];
 const noteArray = [];
 
 //Add a Note to the content area
@@ -80,11 +81,19 @@ function createNote(){
     heading.textContent += inputHeading;
     contentOfNote.textContent += inputContent;
     timeCreated.textContent += "Created on " + setDate + " " + setTime;  
+
+    document.getElementById("input-note").value = "";
+}
+
+function saveNotePreviewContents(){    
+    let notePreview = document.getElementById("cardBody").innerHTML;
+    noteArray.push(notePreview);
 }
 
 //onclick create the button for the note and dispay all of its contents 
 function submitNote(){
     createNote();
+    saveNotePreviewContents();
 }
 
 //You should be able to remove the note preview
@@ -94,7 +103,9 @@ function removeNotePreview(){
 }
 
 function viewNote(){
-    
+    var note = noteArray[0];
+    document.body.insertAdjacentHTML("afterend", "<span id=\"createdNoteSpan\"><\span>");
+    document.getElementById("createdNoteSpan").innerHTML += note;
 }
 
 function deleteNoteContents(){
