@@ -1,7 +1,7 @@
 //Array of HTMLElements
 const buttonArray = [];
 const noteArray = [];
-
+const arrayIDCounter = 1;
 //Add a Note to the content area
 function addNote(){
     document.getElementById("dragarea").insertAdjacentHTML("afterbegin", "<note-component></note-component>");
@@ -50,11 +50,20 @@ function createNote(){
 
     if(document.getElementById("sample-Note") == null){
     
-        //Adding the Created Note Button 
+        //Adding the Created Note Button
+        //create the button and then set the dataArray Attribute 
         var noteArea = document.getElementById("noteContainer");
-        noteArea.insertAdjacentHTML("afterbegin", "<button type=\"button\" id=\"createdNoteButton\" class=\"btn btn-outline-secondary\"onclick=\"viewNote()\"></button>");
+        noteArea.insertAdjacentHTML("afterbegin", "<button type=\"button\" data-arrayID=1 id=\"createdNoteButton\" class=\"btn btn-outline-secondary\"onclick=\"viewNote()\"></button>");
         var buttonText = document.getElementById("titleContent").innerHTML;
         document.getElementById("createdNoteButton").innerHTML += buttonText;
+        
+        var arrayValue = document.getElementById("createdNoteButton").getAttribute("data-arrayID");
+        
+        if(arrayIDCounter > arrayValue){
+            noteArea.setAttribute("data-arrayID") += arrayIDCounter;
+        }
+
+        arrayIDCounter ++;
 
         //Resetting the Note Inputs
         var inputCard = document.getElementById("cardContent");
@@ -103,7 +112,11 @@ function removeNotePreview(){
 }
 
 function viewNote(){
-    var note = noteArray[0];
+    //Check the data-arrayID attribute of the button 
+    var arrayIDNumber = document.getElementById("createdNoteButton").getAttribute("data-arrayID");
+
+    var note = noteArray[arrayIDNumber];
+
     document.body.insertAdjacentHTML("afterend", "<span id=\"createdNoteSpan\"><\span>");
     document.getElementById("createdNoteSpan").innerHTML += note;
 }
