@@ -10,6 +10,7 @@ class Notecontent extends HTMLElement {
    {
     this.innerHTML = `
     <span class="card-body" id="cardBody">
+        
         <h2 id="titleOfNote">S</h2>
         <p class="card-text" id="cardContent">L</p>
         <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>

@@ -30,7 +30,13 @@ function addNoteTitle(){
     document.getElementById("titleContent").append(titleParagraph);
 }
 
-function addNoteButton(){
+function createNote(){
+    
+    //Gathering the text for the inputs
+    let inputHeading = document.getElementById("titleContent").innerText;
+    let inputContent = document.getElementById("input-note").value;
+    let setDate = new Date().toDateString();
+    let setTime = new Date().toLocaleTimeString();
     
     //ADDING THE BUTTONS FOR THE NOTES
     //Checking to see if an HTML Element Exists
@@ -55,36 +61,36 @@ function addNoteButton(){
         noteHeading.remove();
         inputCard.insertAdjacentHTML("afterbegin", "<div class=\"input-group id=\"add-title-area\" mb-3\"\><input type=\"text\" class=\"form-control\" id=\"title-input\"placeholder=\"Note Title:\" aria-label=\"Recipient's username\"aria-describedby=\"basic-addon2\"><div class=\"input-group-append\"><button class=\"btn btn-outline-secondary\" id=\"add-title\" type=\"button\" onclick=\"addNoteTitle()\">Add</button></div></div>");
     }
-}
 
-function createNoteForButton(){
-    let obj = "dfgzfgzfgzxfgzf";
-    
-    //Displaying the span but not adding the created elements to it
+    //Creating and inserting the span for the note
     let mainNote = document.getElementById("cardContent"); 
-    mainNote.insertAdjacentHTML("afterbegin", "<span id=cardBody>Programming</span>");
-    
+    mainNote.insertAdjacentHTML("afterbegin", "<span id=cardBody>Close note preview <i class=\"fa-solid fa-xmark\" onclick=\"removeNotePreview()\"\"></i></span>");
+
+    //Creating the elements for the note
     var heading = document.createElement("h2");
-    var timeCreated = document.createElement("p");
     var contentOfNote = document.createElement("p");
+    var timeCreated = document.createElement("p");
 
-    heading.textContent += obj;
-    noteContent.textContent += obj;
-    timeCreated.textContent += obj;
+    //Appending the created elements to the span 
+    document.getElementById("cardBody").append(heading);
+    document.getElementById("cardBody").append(contentOfNote);
+    document.getElementById("cardBody").append(timeCreated);
 
-    document.getElementById("cardBody").appendChild(heading);
-    document.getElementById("cardBody").appendChild(contentOfNote);
-    document.getElementById("cardBody").appendChild(timeCreated);    
-    
-    //let inputHeading = document.getElementById("titleContent").value;
-    //let inputContent = document.getElementById("input-note").value;
-    //let inputCreatedTime = document.getElementById("title-input").value;    
+    //Adding the text to the contents
+    heading.textContent += inputHeading;
+    contentOfNote.textContent += inputContent;
+    timeCreated.textContent += "Created on " + setDate + " " + setTime;  
 }
 
 //onclick create the button for the note and dispay all of its contents 
 function submitNote(){
-    addNoteButton();
-    createNoteForButton();
+    createNote();
+}
+
+//You should be able to remove the note preview
+function removeNotePreview(){
+    let notePreview = document.getElementById("cardBody");
+    notePreview.remove();
 }
 
 function viewNote(){
