@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "MWyeh8BClzG7f2YazYGNVQJDZPiOfZN/oog8C9uIuuU1nhBoho0sIaEJcP71PwhAtLRVEMn1rFvtfmBYCUGVlA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Altom\\Documents\\Programming\\GithubRepos\\InProgress\\BogusDataGenerator\\BogusDataGenerator\\BogusDataGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Altom\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
