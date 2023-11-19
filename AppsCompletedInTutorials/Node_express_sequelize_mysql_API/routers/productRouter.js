@@ -1,0 +1,13 @@
+const { Model } = require('sequelize')
+const productController = require('../controllers/productController.js')
+
+const router = require ('express').Router()
+
+router.post('/addProduct', productController.addProduct)
+router.get('/allProduct', productController.getAllProducts)
+router.get('/published', productController.getPublishedProduct)
+router.get('/:id', productController.getOneProduct)
+router.put('/:id', productController.updateProduct)
+router.delete('/:id', productController.deleteProduct)
+
+Model.exports = router
