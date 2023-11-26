@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es2018",
+		"esModuleInterop": true,
+		"newLine": "LF",
+		"importHelpers": true,
+		"useUnknownInCatchVariables": true
+	},
+	"exclude": ["node_modules/"]
+}
