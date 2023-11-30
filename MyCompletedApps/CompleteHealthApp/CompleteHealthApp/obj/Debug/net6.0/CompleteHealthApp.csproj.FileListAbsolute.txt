@@ -1,0 +1,15 @@
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\bin\Debug\net6.0\CompleteHealthApp.exe
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\bin\Debug\net6.0\CompleteHealthApp.deps.json
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\bin\Debug\net6.0\CompleteHealthApp.runtimeconfig.json
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\bin\Debug\net6.0\CompleteHealthApp.dll
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\bin\Debug\net6.0\CompleteHealthApp.pdb
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\obj\Debug\net6.0\CompleteHealthApp.csproj.AssemblyReference.cache
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\obj\Debug\net6.0\CompleteHealthApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\obj\Debug\net6.0\CompleteHealthApp.AssemblyInfoInputs.cache
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\obj\Debug\net6.0\CompleteHealthApp.AssemblyInfo.cs
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\obj\Debug\net6.0\CompleteHealthApp.csproj.CoreCompileInputs.cache
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\obj\Debug\net6.0\CompleteHealthApp.dll
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\obj\Debug\net6.0\refint\CompleteHealthApp.dll
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\obj\Debug\net6.0\CompleteHealthApp.pdb
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\obj\Debug\net6.0\CompleteHealthApp.genruntimeconfig.cache
+C:\Users\Altom\source\repos\CompleteHealthApp\CompleteHealthApp\obj\Debug\net6.0\ref\CompleteHealthApp.dll
